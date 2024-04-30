@@ -1,10 +1,10 @@
 const express = require('express');
 const fetch = require('node-fetch');
-const { json } = require('express'); // Import json from express
+const { json } = require('express'); 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(json()); // Use json middleware
+app.use(json());
 
 app.get('/api/mediaUrls/:username', async (req, res) => {
     const { username } = req.params;
